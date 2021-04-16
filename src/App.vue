@@ -1,11 +1,13 @@
 <template>
-  <button
+  <div class="row justify-content-center my-3">
+    <button
     v-if="isLoggedIn"
     @click="logoutUser"
     class="btn btn-danger text-center"
   >
     Logout
   </button>
+  </div>
   <router-view />
 </template>
 
